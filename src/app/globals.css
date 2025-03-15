@@ -3,6 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Adding accent colors */
+  --accent-primary: #6d28d9;
+  --accent-secondary: #10b981;
+  --accent-tertiary: #ef4444;
+  
+  /* Adding additional colors for dark theme */
+  --card-bg: #1e1e24;
+  --nav-bg: #151419;
+  --hover-color: #2a2a36;
 }
 
 @theme inline {
@@ -12,15 +22,39 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-bg: #1e1e24;
+  --nav-bg: #151419;
+  --hover-color: #2a2a36;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nav-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8146ff;
 }
