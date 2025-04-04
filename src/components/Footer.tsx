@@ -81,7 +81,7 @@ const Footer = () => {
   
   // Handle copy email function
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('contact@ciaranday.com');
+    navigator.clipboard.writeText('ciarantday@gmail.com');
     setIsEmailCopied(true);
     setTimeout(() => setIsEmailCopied(false), 2000);
   };
@@ -237,7 +237,7 @@ const Footer = () => {
                   {isEmailCopied ? <CheckIcon className="w-4 h-4 text-green-500" /> : <EnvelopeClosedIcon className="w-4 h-4" />}
                 </span>
                 <span className="inline-block relative">
-                  {isEmailCopied ? 'Copied to clipboard!' : 'contact@ciaranday.com'}
+                  {isEmailCopied ? 'Copied to clipboard!' : 'ciarantday@gmail.com'}
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-violet-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                 </span>
               </motion.button>
