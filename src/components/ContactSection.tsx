@@ -104,7 +104,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h5 className="text-white font-medium">Email</h5>
-                    <p className="text-white/70">ciaran.t.day@gmail.com</p>
+                    <p className="text-white/70">ciarantday@gmail.com</p>
                   </div>
                 </motion.div>
                 
@@ -244,7 +244,7 @@ const ContactSection = () => {
                   </div>
                   
                   {/* Hidden fields - these help EmailJS know where to send the email */}
-                  <input type="hidden" name="to_email" value="ciaran.t.day@gmail.com" />
+                  <input type="hidden" name="to_email" value="ciarantday@gmail.com" />
                   <input type="hidden" name="reply_to" value={formData.user_email} />
                   
                   <motion.button
